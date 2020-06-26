@@ -5,16 +5,32 @@ function getValue(num){
 }
 
 function equal(){
-    document.getElementById("disp").value = eval(result);
-    result=eval(result);
+
+    try{
+        ans=eval(result);
+    }
+    catch(err){
+        ans = "Error";
+    }
+    document.getElementById("history").innerText = result;
+    document.getElementById("disp").value = ans;
+    result = ans;
+    console.log(result, ans);
 }
 
-function claaa(){
-    result='';
-    document.getElementById("disp").value = result;
+function clr(){
+    if(result==''){
+        document.getElementById("history").innerText = result;
+    }
+    else{
+        result='';
+        document.getElementById("disp").value = result;
+    }
 }
 
 function backspace(){
+    if(result=="Error")
+        return;
     result = result.substring(0,result.length-1);
     document.getElementById("disp").value = result;
 }

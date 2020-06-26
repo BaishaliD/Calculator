@@ -3,16 +3,20 @@
     <head>
         <title>Calculator</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/198cd6dc1b.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <table>
             <tr>
-               <td colspan="4" class="display"><input id="disp" type="text" readonly placeholder="0"></td>
+                <td colspan="4" class="display">
+                    <div id="history"></div>
+                    <input id="disp" type="text" readonly placeholder="0">
+                </td>
             </tr>
             <tr>
-                <td class="button red" onclick="claaa()">CE</td>
-                <td class="button red" onclick="backspace()"><<</td>
-                <td class="button green" colspan="2" onclick="equal()">=</td>               
+                <td class="button operator" onclick="clr()">CE</td>
+                <td class="button operator" onclick="backspace()"><i class="fas fa-backspace"></i></td>
+                <td class="button equals" colspan="2" onclick="equal()">=</td>               
             </tr>
             <tr>
                 <td class="button number" onclick="getValue('7')">7</td>

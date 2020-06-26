@@ -6,11 +6,17 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background-color:black;
+    background-color:rgb(255, 255, 255)
 }
 
 .display{
-    height: 100px;    
+    height: 100px; 
+    background-color: rgb(215, 216, 215,0.5);  
+}
+
+table{
+    box-shadow: 0 0 20px 5px rgb(215, 216, 215);
+    border-spacing: 0;
 }
 
 
@@ -19,51 +25,67 @@ td{
 }
 
 input{
-    height: 100%;
+    height: 80px;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 15px;
     text-align: right;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+    background-image: linear-gradient( rgb(247,247,247),rgb(238, 238, 238));
+}
+
+#history{
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    text-align: right;
+    font-size: 1.7rem;
+    border: none;
+    background-image: linear-gradient(rgb(255,255,255),rgb(247,247,247));
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .button{
-    /* box-sizing: border-box; */
-    height: 40px;
+    box-sizing: border-box;
+    height: 80px;
     width: 40px;
-    padding: 10px;
     text-align: center;
-    border-radius: 5px;    
+    border: solid 0.5px rgba(216, 208, 208,0.3);
 }
 
 .number{
-    background-image: linear-gradient(rgb(216, 208, 208),rgb(155, 149, 149));
+    background-color: white;
 }
 
 .number:hover{
-    background-image: linear-gradient(rgba(216, 208, 208,0.9),rgba(155, 149, 149,0.9));
+    background-color: rgba(216, 208, 208,0.3);
 }
 
 .operator{
-    background-image: linear-gradient(rgb(255, 150, 65),rgb(255, 94, 0));
+    background-color: rgba(255, 197, 197, 0.5);
 }
 
 .operator:hover{
-    background-image: linear-gradient(rgba(255, 150, 65,0.9),rgba(255, 94, 0,0.9));
+    background-color:  rgba(255, 197, 197);
 }
 
-.red{
-    background-image: linear-gradient(rgb(255, 132, 121),rgb(231, 42, 25));
+.equals{
+    background-color: rgb(255, 229, 145, 0.5);
 }
 
-.red:hover{    
-    background-image: linear-gradient(rgba(255, 132, 121, 0.9),rgba(231, 42, 25, 0.9));
+.equals:hover{
+    background-color: rgb(255, 229, 145);
 }
 
-.green{
-    background-image: linear-gradient(rgb(194, 255, 175),rgb(87, 235, 42));
-}
-
-.green:hover{
-    background-image: linear-gradient(rgba(194, 255, 175, 0.9),rgba(87, 235, 42, 0.9));
-}
+@media only screen and (max-width: 415px) {
+    table{
+      width: 100%;
+      height: 100vh;
+    }
+  }
