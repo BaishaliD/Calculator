@@ -1,6 +1,6 @@
 # Calculator
 
-Hosted at: 
+Hosted at: baishalid.github.io/calculator/
 
 A basic calculator app built using HTML, CSS and Vanilla JavaScript.
 
